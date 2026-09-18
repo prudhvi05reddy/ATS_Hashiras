@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  api-hashira:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api_hashira_app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - APP_URL=${APP_URL:-http://localhost:3000}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-}
+    restart: unless-stopped

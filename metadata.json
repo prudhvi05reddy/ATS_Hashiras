@@ -1,0 +1,8 @@
+{
+  "name": "ATS Resume Telegram Bot",
+  "description": "AI-powered Telegram Bot for ATS resume screening, matching candidates against job descriptions with real-time scoring, gap analysis, and interactive Telegram bot commands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
