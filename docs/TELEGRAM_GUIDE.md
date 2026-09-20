@@ -15,9 +15,9 @@ This guide walks you through registering your bot with `@BotFather`, setting com
 4. Enter a username ending in `bot` (e.g., `API_Hashira_ATS_bot`).
 5. `@BotFather` will reply with your **HTTP API Token**:
    ```
-   7123456789:AAFlkB4XYZ1234567890abcdefghijklmno
+   <YOUR_TELEGRAM_BOT_TOKEN_FROM_BOTFATHER>
    ```
-   *(Keep this token private!)*
+   *(Keep this token private! Never commit it to GitHub)*
 
 ---
 

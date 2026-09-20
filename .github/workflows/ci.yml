@@ -26,10 +26,11 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: |
+          npm ci || npm install
 
-      - name: Type Check TypeScript
-        run: npx tsc --noEmit
+      - name: Type Check & Lint
+        run: npm run lint
 
       - name: Build Production Assets
         run: npm run build

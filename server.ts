@@ -1169,7 +1169,7 @@ Instructions:
 // TELEGRAM BOT API & REAL-TIME POLLING / WEBHOOK INTEGRATION
 // ---------------------------------------------------------
 
-const DEFAULT_TELEGRAM_TOKEN = '8851904952:AAH-0cFY6odRkho72A_N00Rcblw_LyXfN_E';
+const DEFAULT_TELEGRAM_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
 const BOT_USERNAME = '@ATS_4405_bot';
 const BOT_URL = 'https://t.me/ATS_4405_bot';
 const DEFAULT_APP_URL = 'https://ais-pre-y7ty6ifxb374nmxzva54gt-934501658056.asia-southeast1.run.app';

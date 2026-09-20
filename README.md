@@ -296,7 +296,7 @@ cp .env.example .env
 
 Set your configuration values:
 ```env
-GEMINI_API_KEY="AIzaSyYourActualKeyHere..."
+GEMINI_API_KEY="your_gemini_api_key_here"
 APP_URL="http://localhost:3000"
 TELEGRAM_BOT_TOKEN=""
 ```
