@@ -1,6 +1,6 @@
 # Contributing to API_Hashira
 
-First off, thank you for considering contributing to **API_Hashira**! Projects like this thrive because of developers like you who take the time to submit issues, refine features, and craft documentation.
+First off, thank you for considering contributing to **Hashira**! Projects like this thrive because of developers like you who take the time to submit issues, refine features, and craft documentation.
 
 ---
 
