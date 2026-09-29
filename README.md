@@ -1,4 +1,4 @@
-# 🤖 API_Hashira — Enterprise ATS Resume Screener & Autonomous Telegram AI Bot
+# 🤖 ATS_Hashira — Enterprise ATS Resume Screener & Autonomous Telegram AI Bot
 
 ```
   █████╗ ██████╗ ██╗    ██╗  ██╗ █████╗ ███████╗██╗  ██╗██╗██████╗  █████╗ 
@@ -16,7 +16,7 @@
 [![Docker: Multi-Stage](https://img.shields.io/badge/Docker-Multi--Stage%20Ready-2496ED.svg)](Dockerfile)
 [![CI: GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-brightgreen.svg)](.github/workflows/ci.yml)
 
-**API_Hashira** is a complete, full-stack **Applicant Tracking System (ATS)** and **AI-powered Recruiter Agent**. It parses and screens candidate resumes against target **Job Descriptions (JDs)**, calculates an objective **0–100 compatibility score**, pinpoints critical technical and domain skill gaps, generates actionable ATS booster tips, and compares multiple candidates head-to-head.
+**ATS_Hashira** is a complete, full-stack **Applicant Tracking System (ATS)** and **AI-powered Recruiter Agent**. It parses and screens candidate resumes against target **Job Descriptions (JDs)**, calculates an objective **0–100 compatibility score**, pinpoints critical technical and domain skill gaps, generates actionable ATS booster tips, and compares multiple candidates head-to-head.
 
 ---
 
@@ -31,7 +31,7 @@
 - [🚀 Creating & Pushing to a Brand New Git Repository](#-creating--pushing-to-a-brand-new-git-repository)
 - [💻 Local Setup & Development Guide](#-local-setup--development-guide)
 - [🐳 Docker & Container Deployment](#-docker--container-deployment)
-- [📡 API Endpoints & Telegram Webhooks](#-api-endpoints--telegram-webhooks)
+- [📡 ATS Endpoints & Telegram Webhooks](#-api-endpoints--telegram-webhooks)
 - [⚙️ Configuration & Environment Variables](#️-configuration--environment-variables)
 - [🤝 Contributing & License](#-contributing--license)
 
@@ -143,7 +143,7 @@ DIMENSION                                WEIGHT   EVALUATION CRITERIA
 
 ## 🛡️ Intelligent Guardrails: Document Classifier
 
-Recruiters frequently paste a candidate's resume when prompted to set the target Job Description (`/setjd`). **API_Hashira** prevents database pollution through automated structural pattern recognition:
+Recruiters frequently paste a candidate's resume when prompted to set the target Job Description (`/setjd`). **ATS_Hashira** prevents database pollution through automated structural pattern recognition:
 
 ```
                   ┌──────────────────────────────┐
@@ -192,7 +192,7 @@ Recruiters frequently paste a candidate's resume when prompted to set the target
 ## 📁 Comprehensive Repository File Structure
 
 ```
-API_Hashira/
+ATS_Hashira/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml                 # Automated CI workflow (Build, Type-Check & Lint)
@@ -243,7 +243,7 @@ If you wish to host this project in a **brand new GitHub repository**, follow th
 
 ### Step 1: Create a New Repository on GitHub
 1. Navigate to [github.com/new](https://github.com/new).
-2. Enter a repository name (for example, `API_Hashira_Pro` or `ATS_Resume_Bot`).
+2. Enter a repository name (for example, `ATS_Hashira_Pro` or `ATS_Resume_Bot`).
 3. Set visibility to **Public** or **Private**.
 4. **Do NOT** check "Initialize with README" (we already have a complete documentation suite).
 5. Click **Create repository**.
@@ -259,7 +259,7 @@ git init
 git add .
 
 # 3. Create initial commit
-git commit -m "feat: initial release of API_Hashira ATS Resume Bot"
+git commit -m "feat: initial release of ATS_Hashira ATS Resume Bot"
 
 # 4. Rename default branch to main
 git branch -M main
@@ -279,7 +279,7 @@ git push -u origin main
 ### Prerequisites
 - **Node.js**: v20.x or later installed
 - **npm** or **bun** package manager
-- **Google Gemini API Key**: [Obtain a free API key from Google AI Studio](https://aistudio.google.com/)
+- **Google Gemini ATS Key**: [Obtain a free ATS key from Google AI Studio](https://aistudio.google.com/)
 
 ### 1. Clone & Install
 ```bash
@@ -296,7 +296,7 @@ cp .env.example .env
 
 Set your configuration values:
 ```env
-GEMINI_API_KEY="your_gemini_api_key_here"
+GEMINI_ATS_KEY="your_gemini_api_key_here"
 APP_URL="http://localhost:3000"
 TELEGRAM_BOT_TOKEN=""
 ```
@@ -325,7 +325,7 @@ docker build -t api-hashira .
 
 # Run the container bound to port 3000
 docker run -d -p 3000:3000 \
-  -e GEMINI_API_KEY="your_api_key_here" \
+  -e GEMINI_ATS_KEY="your_api_key_here" \
   -e APP_URL="http://localhost:3000" \
   --name api_hashira_container \
   api-hashira
@@ -338,7 +338,7 @@ docker compose up -d
 
 ---
 
-## 📡 API Endpoints & Telegram Webhooks
+## 📡 ATS Endpoints & Telegram Webhooks
 
 | Endpoint | Method | Payload / Params | Purpose |
 | :--- | :---: | :--- | :--- |
@@ -354,9 +354,9 @@ docker compose up -d
 
 | Variable | Required | Default | Description |
 | :--- | :---: | :---: | :--- |
-| **`GEMINI_API_KEY`** | **Yes** | — | Google Gemini API Key used for ATS analysis and prompt engineering. |
+| **`GEMINI_ATS_KEY`** | **Yes** | — | Google Gemini ATS Key used for ATS analysis and prompt engineering. |
 | **`APP_URL`** | **Yes** | `http://localhost:3000` | Publicly accessible base URL for Telegram webhook delivery. |
-| **`TELEGRAM_BOT_TOKEN`** | *Optional* | `""` | Telegram Bot API token issued by `@BotFather` for live webhook operations. |
+| **`TELEGRAM_BOT_TOKEN`** | *Optional* | `""` | Telegram Bot ATS token issued by `@BotFather` for live webhook operations. |
 | **`PORT`** | *Optional* | `3000` | Port on which Express listens (bound to `0.0.0.0`). |
 | **`NODE_ENV`** | *Optional* | `development` | Deployment environment (`development` or `production`). |
 
