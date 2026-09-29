@@ -1,6 +1,6 @@
-# Contributing to API_Hashira
+# Contributing to ATS_Hashiras
 
-First off, thank you for considering contributing to **Hashira**! Projects like this thrive because of developers like you who take the time to submit issues, refine features, and craft documentation.
+First off, thank you for considering contributing to **ATS_Hashiras**! Projects like this thrive because of developers like you who take the time to submit issues, refine features, and craft documentation.
 
 ---
 
@@ -18,8 +18,8 @@ By participating in this project, you agree to abide by respectful and construct
 ### 1. Fork & Clone
 Fork the repository on GitHub and clone your fork locally:
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/API_Hashira.git
-cd API_Hashira
+git clone https://github.com/prudhvi05reddy/ATS_Hashiras.git
+cd ATS_Hashiras
 ```
 
 ### 2. Branching Strategy
