@@ -163,7 +163,7 @@ Recruiters frequently paste a candidate's resume when prompted to set the target
            ▼                                           ▼
    Resume Score: High                          JD Score: High
            │                                           │
- ┌─────────┴─────────┐                       ┌─────────���─────────┐
+ ┌─────────┴─────────┐                       ┌─────────┴─────────┐
  │ Input into /setjd?│                       │ Input into /setjd?│
  └───┬───────────┬───┘                       └───┬───────────┬───┘
  YES │           │ NO                        YES │           │ NO
@@ -204,7 +204,7 @@ ATS_Hashiras/
 ├── src/
 │   ├── components/
 │   │   ├── AtsFullScreenAnalyzer.tsx  # Full recruitment dashboard workspace
-│   │   ├── AtsTipsSection.tsx         # ATS optimization advice & score booster tips
+│   │   ���── AtsTipsSection.tsx         # ATS optimization advice & score booster tips
 │   │   ├── CandidateCard.tsx          # Individual applicant card with visual score gauge
 │   │   ├── ConnectWhatsAppModal.tsx   # Channel connection modal dialog
 │   │   ├── MarkdownReportView.tsx     # Formatted markdown report exporter
